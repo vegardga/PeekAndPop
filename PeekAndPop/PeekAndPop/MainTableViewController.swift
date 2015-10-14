@@ -22,9 +22,28 @@ class MainTableViewController: UITableViewController {
         Asset(title: "Rectangle", img: "rectangle", desc: "Any quadrilateral with four right angles"),
         Asset(title: "Little house", img: "house", desc: "Little House on the Prairie?")
     ]
+    
+    var alertController: UIAlertController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if traitCollection.forceTouchCapability == .Available {
+            registerForPreviewingWithDelegate(self, sourceView: view)
+        }
+        else {
+            alertController = UIAlertController(title: "3D-Touch not available", message: "Unsupported device.", preferredStyle: .Alert)
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let alertController = alertController {
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(alertController, animated: true, completion: nil)
+            self.alertController = nil
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -49,7 +49,7 @@
         <!--Image View Controller-->
         <scene sceneID="kfl-2g-N6Z">
             <objects>
-                <viewController id="Qcs-XO-0W9" customClass="ImageViewController" customModule="PeekAndPop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewController" id="Qcs-XO-0W9" customClass="ImageViewController" customModule="PeekAndPop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IhZ-Bc-8CH"/>
                         <viewControllerLayoutGuide type="bottom" id="uDU-LK-p1G"/>
