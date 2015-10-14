@@ -26,5 +26,27 @@ class ImageViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // MARK: Preview actions
+    
+    lazy var previewActions: [UIPreviewActionItem] = {
+        func previewActionForTitle(title: String, style: UIPreviewActionStyle = .Default) -> UIPreviewAction {
+            return UIPreviewAction(title: title, style: style) { previewAction, viewController in
+                guard let detailViewController = viewController as? ImageViewController,
+                    desc = detailViewController.text else { return }
+                
+                print("\(previewAction.title) triggered from `ImageViewController` with description: \(desc)")
+            }
+        }
+        
+        let action1 = previewActionForTitle("Default Action")
+        let action2 = previewActionForTitle("Destructive Action", style: .Destructive)
+        
+        return [action1, action2]
+        }()
+    
+    override func previewActionItems() -> [UIPreviewActionItem] {
+        return previewActions
+    }
 
 }
