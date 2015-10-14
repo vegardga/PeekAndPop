@@ -13,13 +13,14 @@ class MainTableViewController: UITableViewController {
     struct Asset {
         let title: String
         let img: String
+        let desc: String
     }
     
     let items = [
-        Asset(title: "Triangle", img: ""),
-        Asset(title: "Circle", img: ""),
-        Asset(title: "Rectangle", img: ""),
-        Asset(title: "Little house", img: "")
+        Asset(title: "Triangle", img: "triangle", desc: "A polygon with three edges and three vertices"),
+        Asset(title: "Circle", img: "circle", desc: "A simple shape in Euclidean geometry"),
+        Asset(title: "Rectangle", img: "rectangle", desc: "Any quadrilateral with four right angles"),
+        Asset(title: "Little house", img: "house", desc: "Little House on the Prairie?")
     ]
 
     override func viewDidLoad() {
@@ -46,19 +47,23 @@ class MainTableViewController: UITableViewController {
 
         let asset: Asset = items[indexPath.row]
         cell.textLabel!.text = asset.title
-        print(asset.title)
 
         return cell
     }
 
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "Show Image", let indexPath = tableView.indexPathForSelectedRow {
+            let asset = items[indexPath.row]
+            let detailViewController = segue.destinationViewController as! ImageViewController
+            
+            detailViewController.title = asset.title
+            detailViewController.img = UIImage(named: asset.img)
+            detailViewController.text = asset.desc
+        }
     }
-    */
+
 
 }

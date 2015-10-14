@@ -12,6 +12,7 @@
 		AF84D6F41BCEC78200BFD25F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF84D6F31BCEC78200BFD25F /* Assets.xcassets */; };
 		AF84D6F71BCEC78200BFD25F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF84D6F51BCEC78200BFD25F /* LaunchScreen.storyboard */; };
 		AF84D7021BCECB3600BFD25F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84D7011BCECB3600BFD25F /* MainTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AF84D7041BCECE8100BFD25F /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84D7031BCECE8100BFD25F /* ImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AF84D6F61BCEC78200BFD25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF84D6F81BCEC78200BFD25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF84D7011BCECB3600BFD25F /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		AF84D7031BCECE8100BFD25F /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				AF84D6F01BCEC78200BFD25F /* Main.storyboard */,
 				AF84D6EC1BCEC78200BFD25F /* AppDelegate.swift */,
 				AF84D7011BCECB3600BFD25F /* MainTableViewController.swift */,
+				AF84D7031BCECE8100BFD25F /* ImageViewController.swift */,
 				AF84D7001BCEC91000BFD25F /* Supporting files */,
 			);
 			path = PeekAndPop;
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF84D6ED1BCEC78200BFD25F /* AppDelegate.swift in Sources */,
+				AF84D7041BCECE8100BFD25F /* ImageViewController.swift in Sources */,
 				AF84D7021BCECB3600BFD25F /* MainTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
