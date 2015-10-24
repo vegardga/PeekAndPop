@@ -1,3 +1,6 @@
+# Only in Norwegian
+Sorry foreign languages, but this tutorial is only given in Norwegian. 
+
 # Peek and Pop
 3D Touch. Neste generasjon Multi-Touch. I hvert fall i følge Apple. Dette tilfører iPhone-opplevelsen en ny dimensjon av funksjonalitet. Men hvordan utnytter vi utviklere denne dimensjonen? La oss ta en kjapp titt, og kanskje et pop..
 
