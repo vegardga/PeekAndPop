@@ -27,11 +27,11 @@ For å vise hva som må til for å bruke Peek and Pop er det like greit å ta de
 
 ![alt text](https://bekkopen.blob.core.windows.net/attachments/f9e23077-1a9e-40ef-84d4-a56ff53ecb3f "Opprettelse av nytt prosjekt i Xcode")
 
-Peek and Pop er fint å vise gjennom en tabell, så vi bytter ut nevnte ViewController med en *TableViewController*. I eksempelprosjektet valgte jeg å kalle kontrolleren for **MainTableViewController**.
+Peek and Pop er fint å vise gjennom en tabell, så vi bytter ut nevnte ViewController med en *TableViewController*. I tillegg integreres TableViewControlleren i en *NavigationController* for å forenkle navigasjonsflyten mellom de ulike visningene i applikasjonen.
 
 ![alt text](https://bekkopen.blob.core.windows.net/attachments/a73b3117-c791-4a86-915c-f69217c762c8 "Storyboard med NavigationController og TableViewController")
 
-MainTableViewController inneholder foreløpig ingen spesielle funksjoner eller oppsett. Kildekoden nedenfor burde være kjent for de fleste som har prøvd seg på TableViewController.
+I eksempelprosjektet valgte jeg å kalle TableViewControlleren for **MainTableViewController**. MainTableViewController inneholder foreløpig ingen spesielle funksjoner eller oppsett. Kildekoden nedenfor burde være kjent for de fleste som har prøvd seg på TableViewController.
 
 ```swift
 //
@@ -52,14 +52,6 @@ class MainTableViewController: UITableViewController {
         Asset(title: "Rectangle"),
         Asset(title: "Little house")
     ]
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 
     // MARK: - Table view data source
 
@@ -192,10 +184,6 @@ class ImageViewController: UIViewController {
 
         myImageView.image = img
         myLabel.text = text
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
 }
@@ -395,10 +383,6 @@ class ImageViewController: UIViewController {
 
         myImageView.image = img
         myLabel.text = text
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     // MARK: Preview actions
