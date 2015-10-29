@@ -239,7 +239,7 @@ I dette tilfellet vises en *UIAlertController* hvis telefonen ikke støtter 3D T
 
 ![alt text](https://bekkopen.blob.core.windows.net/attachments/40873d14-f7bc-4f55-9bf5-67ca2a500b2e "Feilmeldingen med teksten Unsupported device")
 
-Men, skulle man være så heldig å ha 3D Touch vil metoden ```registerForPreviewingWithDelegate``` bli utført, og telefonen bekrefter at Peek and Pop er tilgjengelig og kan brukes. *UIViewControllerPreviewingDelegate* kan være fin å legge i en *extension*, for å skille på standardfunksjonalitet som fungerer for alle telefoner og 3D Touch-funksjonalitet for nyere telefoner som støtter dette. Det ble derfor opprettet en ny fil kalt **MainTableViewController+UIViewControllerPreviewingDelegate.swift** som implementerer de to nevnte metodene ovenfor.
+Men, skulle man være så heldig å ha 3D Touch vil metoden ```registerForPreviewingWithDelegate``` bli utført, og telefonen bekrefter at Peek and Pop er tilgjengelig og kan brukes. UIViewControllerPreviewingDelegate kan være fin å legge i en *extension*, for å skille på standardfunksjonalitet som fungerer for alle telefoner og 3D Touch-funksjonalitet for nyere telefoner som støtter dette. Det ble derfor opprettet en ny fil kalt **MainTableViewController+UIViewControllerPreviewingDelegate.swift** som implementerer de to nevnte metodene ovenfor.
 
 ```swift
 //
