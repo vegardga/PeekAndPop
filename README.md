@@ -412,6 +412,3 @@ class ImageViewController: UIViewController {
 
 # En spennende tid i vente
 Apple lanserer stadig nye produkter med nye funksjoner, noen bedre og mer interessante enn andre. 3D Touch, og da også Peek and Pop, er noe av det mer spennende jeg personlig har sett den siste tiden fra Apple. Det at skjermen kan merke hvor hardt man trykker er intet annet enn fascinerende. Jeg gleder meg til å se hva du lager og bruker dette til!
-
-Kildekoden til eksempelprosjekt brukt i denne gjennomgangen ligger ute på github.
-[https://github.com/vegardga/PeekAndPop](https://github.com/vegardga/PeekAndPop)
